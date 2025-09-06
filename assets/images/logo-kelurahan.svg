@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <!-- Background Circle -->
+  <circle cx="30" cy="30" r="28" fill="#0d6efd" stroke="#ffffff" stroke-width="2"/>
+  
+  <!-- Building/Kelurahan Icon -->
+  <g transform="translate(15,15)">
+    <!-- Main building -->
+    <rect x="8" y="15" width="14" height="15" fill="#ffffff"/>
+    
+    <!-- Roof -->
+    <polygon points="5,15 15,8 25,15" fill="#ffffff"/>
+    
+    <!-- Door -->
+    <rect x="12" y="22" width="6" height="8" fill="#0d6efd"/>
+    
+    <!-- Windows -->
+    <rect x="10" y="18" width="3" height="3" fill="#0d6efd"/>
+    <rect x="17" y="18" width="3" height="3" fill="#0d6efd"/>
+    
+    <!-- Flag pole -->
+    <line x1="25" y1="10" x2="25" y2="5" stroke="#ffffff" stroke-width="1"/>
+    <rect x="25" y="5" width="4" height="3" fill="#ff0000"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="30" y="45" text-anchor="middle" fill="#ffffff" font-size="8" font-family="Arial, sans-serif" font-weight="bold">MARGA</text>
+  <text x="30" y="53" text-anchor="middle" fill="#ffffff" font-size="8" font-family="Arial, sans-serif" font-weight="bold">SARI</text>
+</svg>

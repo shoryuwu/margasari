@@ -1,0 +1,26 @@
+# Keamanan folder upload
+# Mencegah eksekusi file PHP dan script berbahaya
+
+# Disable PHP execution
+php_flag engine off
+
+# Disable directory browsing
+Options -Indexes
+
+# Allow only specific file types
+<FilesMatch "\.(jpg|jpeg|png|gif|pdf|doc|docx)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+# Block potentially dangerous file types
+<FilesMatch "\.(php|php3|php4|php5|phtml|pl|py|jsp|asp|sh|cgi)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Block access to .htaccess itself
+<Files ~ "^\.ht">
+    Order allow,deny
+    Deny from all
+</Files>

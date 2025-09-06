@@ -1,0 +1,52 @@
+# Ignore uploaded files (user data)
+uploads/pengaduan/*.jpg
+uploads/pengaduan/*.jpeg
+uploads/pengaduan/*.png
+uploads/pengaduan/*.gif
+uploads/activities/*.jpg
+uploads/activities/*.jpeg
+uploads/activities/*.png
+uploads/activities/*.gif
+uploads/documents/*.pdf
+uploads/documents/*.doc
+uploads/documents/*.docx
+
+# Keep the upload directories but ignore user files
+!uploads/pengaduan/index.html
+!uploads/activities/index.html
+!uploads/documents/index.html
+!uploads/.htaccess
+
+# Ignore temporary files
+*.tmp
+*.log
+
+# Ignore database config (if contains sensitive info)
+# Uncomment if you want to exclude database config
+# config/database.php
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore temporary PHP files
+*.php~
+*.php.bak
+
+# Ignore test/debug files
+debug_*.php
+test_*.php
+fix_*.php
+add_sample_*.php
+
+# Keep important files
+!README.md
+!.gitignore
